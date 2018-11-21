@@ -22,10 +22,18 @@
 		272E9E24218BD81F00FFA99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272E9E27218BD81F00FFA99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272E9E29218BD81F00FFA99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272E9E33218C060300FFA99E /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		272E9E17218BD81D00FFA99E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272E9E30218C060300FFA99E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				272E9E1A218BD81D00FFA99E /* first1102.app */,
+				272E9E33218C060300FFA99E /* sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +93,23 @@
 			productReference = 272E9E1A218BD81D00FFA99E /* first1102.app */;
 			productType = "com.apple.product-type.application";
 		};
+		272E9E32218C060300FFA99E /* sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 272E9E42218C060B00FFA99E /* Build configuration list for PBXNativeTarget "sample" */;
+			buildPhases = (
+				272E9E2F218C060300FFA99E /* Sources */,
+				272E9E30218C060300FFA99E /* Frameworks */,
+				272E9E31218C060300FFA99E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sample;
+			productName = sample;
+			productReference = 272E9E33218C060300FFA99E /* sample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +121,9 @@
 				ORGANIZATIONNAME = shenah;
 				TargetAttributes = {
 					272E9E19218BD81D00FFA99E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					272E9E32218C060300FFA99E = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -113,6 +142,7 @@
 			projectRoot = "";
 			targets = (
 				272E9E19218BD81D00FFA99E /* first1102 */,
+				272E9E32218C060300FFA99E /* sample */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +158,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		272E9E31218C060300FFA99E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +174,13 @@
 			files = (
 				272E9E20218BD81D00FFA99E /* ViewController.swift in Sources */,
 				272E9E1E218BD81D00FFA99E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272E9E2F218C060300FFA99E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = first1102/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = naver.shenah.first1102;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,11 +346,46 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = first1102/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = naver.shenah.first1102;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		272E9E43218C060B00FFA99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = naver.shenah.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		272E9E44218C060B00FFA99E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = naver.shenah.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,6 +409,15 @@
 			buildConfigurations = (
 				272E9E2D218BD81F00FFA99E /* Debug */,
 				272E9E2E218BD81F00FFA99E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		272E9E42218C060B00FFA99E /* Build configuration list for PBXNativeTarget "sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272E9E43218C060B00FFA99E /* Debug */,
+				272E9E44218C060B00FFA99E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
